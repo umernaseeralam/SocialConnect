@@ -1,0 +1,247 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(to right, rgb(218, 96, 116), rgb(185, 137, 215));
+    overflow-y: auto; 
+}
+
+.FeedTopHeaderHolder {
+    background: linear-gradient(to right, rgb(251, 156, 171), rgb(185, 137, 215), rgb(123, 32, 180));
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 26px;
+    z-index: 1000;
+}
+
+.FeedTopHeaderHolder::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.FeedLogo {
+    width: 30%;
+    position: static;
+    float: left;
+}
+
+.FeedSearchHolder {
+    float: right;
+    width: 60%;
+    margin-right: 20px;
+}
+
+.FeedSearchInput {
+    padding: 12px;
+    border: none;
+    width: 50%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.FeedSearchBtn {
+    padding: 12px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.FeedSideBar {
+    background: linear-gradient(to right, rgb(218, 96, 116), rgb(185, 137, 215));
+    border: 1px solid black;
+    position: fixed;
+    top: 89px;
+    left: 0;
+    width: 18%;
+    height: calc(100vh - 89px);
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.FeedBtnStyle {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.FeedSideBarLogoHolder {
+    width: 100%;
+    margin-top: 100%;
+}
+
+.FeedSideBarLogo {
+    width: 90%;
+    margin-left: 10px;
+    display: flex;
+}
+
+.FeedContent {
+    margin-top: 100px;
+    margin-left: 20%;
+    width: 78%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.FeedPostContainer {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.FeedPostHeader {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.FeedProfilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.FeedUserInfo {
+    font-size: 14px;
+}
+
+.FeedUserInfo .FeedUsername {
+    font-weight: bold;
+}
+
+.FeedPostContent {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.FeedPostImage {
+    width: 100%;
+}
+
+.FeedPostFooter {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FeedLikeComment {
+    display: flex;
+    gap: 16px;
+}
+
+.FeedLikeComment span {
+    font-size: 14px;
+    cursor: pointer;
+    color: #888;
+}
+
+.FeedLikeComment span:hover {
+    color: #555;
+}
+
+.FeedAddPostBtn {
+    display: block;
+    background: linear-gradient(to right, rgb(251, 156, 171), rgb(185, 137, 215), rgb(123, 32, 180));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.FeedAddPostBtn:hover {
+    background: linear-gradient(to right, rgb(123, 32, 180), rgb(185, 137, 215), rgb(251, 156, 171));
+}
+
+.FeedAddPostBtnSidebar {
+    background: linear-gradient(to right, rgb(251, 156, 171), rgb(185, 137, 215), rgb(123, 32, 180));
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.FeedAddPostBtnSidebar:hover {
+    background: linear-gradient(to right, rgb(123, 32, 180), rgb(185, 137, 215), rgb(251, 156, 171));
+}
+
+.FeedPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.FeedPopupContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  height: 500px;
+}
+
+.FeedPopupContent input,
+.FeedPopupContent textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.FeedPopupContent button {
+  margin-right: 10px;
+}
+.FeedPostFooter {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FeedLikeComment {
+  display: flex;
+  gap: 16px;
+}
+
+.FeedLikeComment span {
+  font-size: 14px;
+  cursor: pointer;
+  color: #888;
+}
+
+.FeedLikeComment span:hover {
+  color: #555;
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    margin: 1%;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(218, 96, 116) , rgb(185, 137, 215));
+    position: relative;
+}
+.PositionLogoText{
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 28px;
+    color: white;
+    padding-left: 20px;
+    margin-top: 60px;
+}
+.Logo{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.SigninBackgroundHolder{
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+.SigninHolder{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.WelcomeText{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.DetailsText{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: gray;
+}
+
+.EmailSearchHolder{
+    margin-top: 30px;
+}
+
+.TextStyle{
+    margin-left: 60px;
+}
+.InputStyle{
+    border: gray 1px solid;
+    border-radius: 5px;
+    width: 70%;
+    padding: 12px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.RememberForgetText{
+    padding-top: 30px;
+}
+.RememberMeOption{
+    display: inline-block;
+    margin-left: 60px;
+}
+.RememberMeText{
+    display: inline-block;
+    margin-left: 3px;
+}
+.ForgotPasswordLink{
+    margin-left: 135px;
+    text-decoration: none;
+    color: rgb(241, 142, 158) ;
+}
+.SigninOptionsHolder{
+    margin-top: 20px;
+}
+.BtnStyle{
+    margin-left: 60px;
+    margin-top: 5px;
+    padding: 12px;
+    width: 76%;
+    border: gray 1px solid;
+    border-radius: 3px;
+}
+.SigninBtn{
+    background-image: linear-gradient(to right, pink, lightyellow);
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+.SigninBtn:hover{
+    color: white;
+}
+.SigninBtn:active{
+    opacity: 0.8;
+}
+.SignupTextHolder{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.SignupText{
+    display: inline-block;
+}
+.SignupLink{
+    text-decoration: none;
+    color:rgb(221, 81, 104);
+}
